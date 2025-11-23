@@ -80,6 +80,37 @@
             text-align: center;
             padding: 2rem;
         }
+        .mobile-only {
+            display: none;
+        }
+        @media (max-width: 768px) {
+            .desktop-only {
+                display: none !important;
+            }
+
+            .mobile-only {
+                display: block !important;
+            }
+        }
+        .mobile-only .w3-dropdown-content {
+            background: rgba(255, 255, 255, 0.18);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-radius: 15px;
+            padding: 0;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            overflow: hidden;
+        }
+        .mobile-only .w3-dropdown-content a {
+            background: transparent !important;
+            color: #000000 !important;
+            font-weight: 200;
+        }
+        .mobile-only .w3-dropdown-content a:hover {
+            background: rgba(255, 255, 255, 0.25) !important;
+            backdrop-filter: blur(15px);
+        }
     </style>
 </head>
 
@@ -87,12 +118,23 @@
     <div class="w3-top">
         <div class="w3-bar w3-padding w3-card">
             <a href="#home" class="w3-bar-item w3-button">หัวข้อหลัก</a>
-            <div class="w3-right w3-hide-small">
+            <div class="w3-right desktop-only">
                 <a href="#one" class="w3-bar-item w3-button">กิลกาเมช</a>
                 <a href="#two" class="w3-bar-item w3-button">เมโสโปเตเมีย</a>
-                <a href="#three" class="w3-bar-item w3-button">เนื้อเรื่องและการผจญภัยของกิลกาเมช</a>
+                <a href="#three" class="w3-bar-item w3-button">เนื้อเรื่อง</a>
                 <a href="#four" class="w3-bar-item w3-button">ชื่อ</a>
             </div>
+
+            <div class="w3-dropdown-click w3-right mobile-only">
+                <button class="w3-button">เมนู ▼</button>
+                <div class="w3-dropdown-content w3-bar-block w3-card">
+                    <a href="#one" class="w3-bar-item w3-button">กิลกาเมช</a>
+                    <a href="#two" class="w3-bar-item w3-button">เมโสโปเตเมีย</a>
+                    <a href="#three" class="w3-bar-item w3-button">เนื้อเรื่อง</a>
+                    <a href="#four" class="w3-bar-item w3-button">ชื่อ</a>
+                </div>
+            </div>
+        </div>
         </div>
     </div>
 
@@ -101,13 +143,13 @@
 
         <div class="w3-row w3-padding-64" id="home">
             <p style="font-size:30px;" class="w3-center"><b>มหากาพย์กิลกาเมช</b></p>
-            <div class="m6 w3-padding-large w3-hide-small">
+            <div class="m6 w3-padding-large">
                 <img class="w3-round w3-image" src="https://cdn.discordapp.com/attachments/1442170567271911556/1442170591686824037/fccfb22e-24f7-4ea6-b76e-3d2096b7d018.png?ex=69247587&is=69232407&hm=f7fb2feb35f5504e2d5d033aff6431059c26ca08da7d861e5e5abfe5119ea96c" alt="Hamburger Catering" width="1600" height="800">
             </div>
         </div>
 
         <div class="w3-row w3-padding-64" id="one">
-            <div class="w3-col m6 w3-padding-large w3-hide-small">
+            <div class="w3-col m6 w3-padding-large">
                 <img src="https://cdn.discordapp.com/attachments/1442170567271911556/1442172259153346771/rx1w9w107k5ahpqYA5IWg-o.jpg?ex=69247714&is=69232594&hm=2e1d341ea27898992d873f66e1e891bbca8e9accddd4be7578acd1a292a02423" class="w3-round w3-image w3-opacity-min" alt="รูปภาพ" width="600" height="1500">
             </div>
             <div class="w3-col m6 w3-padding-large">
@@ -139,13 +181,13 @@
                 <p style="font-size:22px;" class="w3-center"><b>บทบาทต่อมหากาพย์กิลกาเมช</b></p>
                 <p class="w3-large w3-text-grey w3-hide-medium">เมืองอูรุคและวัฒนธรรมเมโสโปเตเมียเป็นฉากหลังที่สำคัญของมหากาพย์กิลกาเมช เรื่องราวสะท้อนถึงการเมือง สังคม และความเชื่อของชาวเมโสโปเตเมีย และให้ภาพของวีรบุรุษผู้แสดงความกล้าหาญ มิตรภาพ และการแสวงหาความหมายของชีวิตในบริบทของสังคมโบราณ</p>
             </div>
-            <div class="w3-col m6 w3-padding-large w3-hide-small">
+            <div class="w3-col m6 w3-padding-large">
                 <img src="https://cdn.discordapp.com/attachments/1442170567271911556/1442174759109394654/3216f2db8b1caa2129ef6485d0bc8d91.jpg?ex=69247968&is=692327e8&hm=ee4e7798732cdbb55895547ae0ce2253cb737ea4de8ff89200b2019118f7e0a5" class="w3-round w3-image w3-opacity-min" alt="รูปภาพ" width="600" height="1500">
             </div>
         </div>
 
         <div class="w3-row w3-padding-64" id="three">
-            <div class="w3-col m6 w3-padding-large w3-hide-small">
+            <div class="w3-col m6 w3-padding-large">
                 <img src="https://cdn.discordapp.com/attachments/1442170567271911556/1442186131667026021/K11704384-17.png?ex=69248400&is=69233280&hm=a931b1a66eabc41c89fcb73dd14d1628d18f3de6e5bf96b39d1599d01dfe0352" class="w3-round w3-image w3-opacity-min" alt="รูปภาพ" width="600" height="1500">
             </div>
             <div class="w3-col m6 w3-padding-large">
@@ -183,6 +225,13 @@
             const target = document.querySelector(link.getAttribute('href'));
             if(target) window.scrollTo({top: target.offsetTop - navbarHeight, behavior:"smooth"});
           });
+        });
+    </script>
+
+    <script>
+        document.querySelector('.mobile-only .w3-button').addEventListener('click', function() {
+            const content = this.nextElementSibling;
+            content.style.display = (content.style.display === "block") ? "none" : "block";
         });
     </script>
 
