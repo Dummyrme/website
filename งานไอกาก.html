@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>โครงงานเรื่อง มหากาพย์กิลกาเมช</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Kanit", sans-serif;
+            margin: 0;
+            background: linear-gradient(135deg, #e0e0e0, #f9f9f9);
+        }
+        h1, h2, h3 {
+            font-family: "Playfair Display";
+            letter-spacing: 5px;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.15), 0 0 2px rgba(255, 255, 255, 0.3);
+        }
+        .w3-top {
+            background: rgba(255, 255, 255, 0.22);
+            backdrop-filter: blur(14px) saturate(180%);
+            border-bottom: 1px solid rgba(255, 255, 255,0.3);
+        }
+        button, .w3-button {
+            border-radius:16px;
+            position:relative;
+            overflow:hidden;
+            transition: .3s;
+            z-index: 1;
+            box-shadow: 0 4px 12px rgba(255, 255, 255, 0.25), 0 6px 25px rgba(0, 0, 0, 0.1);
+        }
+        button:hover,.w3-button:hover {
+            transform: scale(1.07);
+            color:#1a1a1a;
+            text-shadow: 0 0 6px rgba(255, 255, 255, 0.9), 0 0 12px rgba(255, 255, 255, 0.6), 0 2px 4px rgba(255, 255, 255, 0.15);
+            box-shadow: 0 6px 18px rgba(255, 255, 255, 0.4), 0 10px 40px rgba(0, 0, 0, 0.15);
+        }
+        button:hover::after,.w3-button:hover::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at center, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.2), transparent);
+            border-radius: inherit;
+            backdrop-filter: blur(15px);
+            z-index: -1;
+            opacity: 1;
+            transform:scale(3);
+            filter:blur(15px);
+        }
+        .w3-content,.w3-row,.w3-container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px) saturate(180%);
+            border-radius: 20px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08), 0 4px 15px rgba(255, 255, 255, 0.1);
+            transition: transform .3s, box-shadow .3s;
+        }
+        .w3-row:hover,.w3-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12), 0 6px 20px rgba(255, 255, 255, 0.15);
+        }
+        .w3-image {
+            transition: transform .3s, box-shadow .3s;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08), 0 4px 10px rgba(255, 255, 255, 0.1);
+            border-radius: 20px;}
+        .w3-image:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12),0 6px 20px rgba(255, 255, 255, 0.15);
+        }
+        footer {
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 -5px 20px rgba(0,0,0,0.05);
+            text-align: center;
+            padding: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="w3-top">
+        <div class="w3-bar w3-padding w3-card" style="letter-spacing:4px;">
+            <a href="#home" class="w3-bar-item w3-button">หัวข้อหลัก</a>
+            <div class="w3-right w3-hide-small">
+                <a href="#one" class="w3-bar-item w3-button">กิลกาเมช</a>
+                <a href="#two" class="w3-bar-item w3-button">เมโสโปเตเมีย</a>
+                <a href="#three" class="w3-bar-item w3-button">เนื้อเรื่องและการผจญภัยของกิลกาเมช</a>
+                <a href="#four" class="w3-bar-item w3-button">ชื่อ</a>
+            </div>
+        </div>
+    </div>
+
+    <header class="w3-display-container w3-content w3-wide" style="max-width:1600px; min-width:500px;" id="home"></header>
+    <div class="w3-content" style="max-width:1100px">
+
+        <div class="w3-row w3-padding-64" id="home">
+            <p style="font-size:30px;" class="w3-center"><b>มหากาพย์กิลกาเมช</b></p>
+            <div class="m6 w3-padding-large w3-hide-small">
+                <img class="w3-round w3-image" src="https://cdn.discordapp.com/attachments/1442170567271911556/1442170591686824037/fccfb22e-24f7-4ea6-b76e-3d2096b7d018.png?ex=69247587&is=69232407&hm=f7fb2feb35f5504e2d5d033aff6431059c26ca08da7d861e5e5abfe5119ea96c" alt="Hamburger Catering" width="1600" height="800">
+            </div>
+        </div>
+
+        <div class="w3-row w3-padding-64" id="one">
+            <div class="w3-col m6 w3-padding-large w3-hide-small">
+                <img src="https://cdn.discordapp.com/attachments/1442170567271911556/1442172259153346771/rx1w9w107k5ahpqYA5IWg-o.jpg?ex=69247714&is=69232594&hm=2e1d341ea27898992d873f66e1e891bbca8e9accddd4be7578acd1a292a02423" class="w3-round w3-image w3-opacity-min" alt="รูปภาพ" width="600" height="1500">
+            </div>
+            <div class="w3-col m6 w3-padding-large">
+                <p style="font-size:30px;" class="w3-center"><b>กิลกาเมช</b></p>
+                <p class="w3-large">มหากาพย์กิลกาเมช (Epic of Gilgamesh) เป็นหนึ่งในวรรณกรรมโบราณที่สุดของมนุษยชาติ มีต้นกำเนิดในเมโสโปเตเมีย ประมาณ 2100–1200 ปีก่อนคริสต์ศักราช มหากาพย์นี้ถ่ายทอดเรื่องราวของ กิลกาเมช กษัตริย์แห่งเมืองอูรุค (Uruk) ซึ่งเป็นวีรบุรุษผู้มีพลังเหนือมนุษย์ มีความแข็งแกร่งและปัญญาเฉียบแหลม แต่ก็มีด้านอารมณ์และจิตใจที่มนุษย์ทุกคนมีเหมือนกัน</p>
+                <p style="font-size:22px;" class="w3-center"><b>ประวัติกิลกาเมช</b></p>
+                <p class="w3-large w3-text-grey w3-hide-medium">กิลกาเมชเป็นบุตรของ พระราชาเลอมิชาดูร์ (Lugalbanda) และนางเทพีนาม นินซุน (Ninsun) ทำให้เขาเป็น ครึ่งเทพครึ่งมนุษย์ ซึ่งส่งผลให้เขามีพลังอันยิ่งใหญ่และความสามารถเหนือกว่าผู้คนทั่วไป เมืองอูรุคในสมัยของกิลกาเมชรุ่งเรืองมาก แต่ประชาชนต่างหวาดกลัวกิลกาเมชเพราะเขาใช้อำนาจอย่างไม่ยับยั้ง กษัตริย์หนุ่มผู้นี้มักก่อกวนและเรียกร้องสิ่งต่าง ๆ จากประชาชนตามอำเภอใจ
+                    <br><br>
+                    เพื่อปรับสมดุลของอำนาจ เทพเจ้า จึงสร้าง เอนกิดู (Enkidu) ขึ้นมา เอนกิดูเป็นชายป่าผู้มีพละกำลังเทียบเท่ากิลกาเมช ซึ่งตอนแรกเขาอาศัยอยู่กับสัตว์ป่าและยังไม่รู้จักอารยธรรม เมื่อทั้งสองพบกัน พวกเขาต่อสู้กันอย่างดุเดือด แต่สุดท้ายก็กลายเป็นเพื่อนรักและคู่หูที่ร่วมผจญภัยไปด้วยกัน
+                    <br><br>
+                    กิลกาเมชและเอนกิดูได้ออกเดินทางผจญภัยและต่อสู้กับสัตว์ประหลาด รวมถึงบรรดาภารกิจอันยิ่งใหญ่ เช่น การสังหาร <b>ฮุมบาบา (Humbaba)</b> ผู้พิทักษ์ป่าไซเดอร์ และการปราบ <b>วัวสวรรค์ (Bull of Heaven)</b> ที่เทพีอิชตาร์ (Ishtar) ส่งมาเพื่อลงโทษเมืองอูรุค การผจญภัยเหล่านี้ทำให้กิลกาเมชได้เรียนรู้ถึงความกล้าหาญ มิตรภาพ และความหมายของชีวิต
+                    <br><br>
+                    หลังจากเอนกิดูเสียชีวิต กิลกาเมชเผชิญกับความเศร้าโศกและเริ่มตั้งคำถามเกี่ยวกับ ความเป็นอมตะ เขาออกเดินทางเพื่อค้นหาความลับของชีวิตนิรันดร์ ซึ่งสุดท้ายกิลกาเมชได้ตระหนักว่า <b>ความเป็นอมตะของมนุษย์อยู่ที่ชื่อเสียงและการสร้างสิ่งยิ่งใหญ่ไว้บนโลกนี้</b> ไม่ใช่การมีชีวิตอยู่ตลอดกาล
+                </p>
+            </div>
+        </div>
+
+        <div class="w3-row w3-padding-64" id="two">
+            <div class="w3-col m6 w3-padding-large">
+                <p style="font-size:30px;" class="w3-center"><b>เมโสโปเตเมีย</b></p>
+                <p class="w3-large">เมโสโปเตเมีย (Mesopotamia) เป็นภูมิภาคโบราณตั้งอยู่ระหว่างแม่น้ำไทกริส (Tigris) และยูเฟรตีส (Euphrates) ในปัจจุบันครอบคลุมพื้นที่อิรักตะวันตกและตะวันออกของซีเรีย เมโสโปเตเมียถือเป็น หนึ่งในแหล่งกำเนิดอารยธรรมแรกของโลก มีประวัติศาสตร์ยาวนานหลายพันปี มีการก่อตั้งเมืองใหญ่ การพัฒนาเกษตรกรรม การสร้างระบบเขียน และการก่อตั้งราชอาณาจักรต่าง ๆ</p>
+                <p style="font-size:22px;" class="w3-center"><b>ความสำคัญทางประวัติศาสตร์</b></p>
+                <p class="w3-large w3-text-grey w3-hide-medium">ในสมัยโบราณ เมโสโปเตเมียเป็นศูนย์กลางทางเศรษฐกิจ การเมือง และศาสนา เมืองอูรุค (Uruk) หนึ่งในเมืองสำคัญ ถูกยกให้เป็นเมืองที่รุ่งเรืองและมีอิทธิพลต่อวัฒนธรรมโดยรอบ กิลกาเมช กษัตริย์แห่งอูรุค มีบทบาทสำคัญในการสะท้อนภาพลักษณ์ของราชาโบราณ ทั้งในฐานะผู้ปกครองที่มีอำนาจสูงสุดและวีรบุรุษที่มีความกล้าหาญ
+                    <br><br>
+                    ชาวเมโสโปเตเมียเชื่อใน <b>เทพเจ้าหลากหลายองค์</b> และมักใช้ศิลปะและวรรณกรรมเป็นเครื่องมือในการบันทึกประวัติศาสตร์และคติความเชื่อ มหากาพย์กิลกาเมชจึงไม่ใช่เพียงเรื่องเล่าของวีรบุรุษ แต่สะท้อนค่านิยม ศีลธรรม และความเชื่อทางศาสนาของชาวเมโสโปเตเมียในยุคนั้น
+                </p>
+                <p style="font-size:22px;" class="w3-center"><b>โครงสร้างสังคมและวัฒนธรรม</b></p>
+                <p class="w3-large w3-text-grey w3-hide-medium">เมโสโปเตเมียมีการแบ่งชนชั้นอย่างชัดเจน ได้แก่ กษัตริย์ ขุนนาง พ่อค้า ช่างฝีมือ และเกษตรกร ราชสำนักและวัดเป็นศูนย์กลางอำนาจทางการเมืองและศาสนา ศิลปะ เมือง สถาปัตยกรรม และระบบเขียนคูนิฟอร์ม (Cuneiform) ถูกใช้เพื่อจดบันทึกทั้งในด้านการค้า กฎหมาย และวรรณกรรม</p>
+                <p style="font-size:22px;" class="w3-center"><b>บทบาทต่อมหากาพย์กิลกาเมช</b></p>
+                <p class="w3-large w3-text-grey w3-hide-medium">เมืองอูรุคและวัฒนธรรมเมโสโปเตเมียเป็นฉากหลังที่สำคัญของมหากาพย์กิลกาเมช เรื่องราวสะท้อนถึงการเมือง สังคม และความเชื่อของชาวเมโสโปเตเมีย และให้ภาพของวีรบุรุษผู้แสดงความกล้าหาญ มิตรภาพ และการแสวงหาความหมายของชีวิตในบริบทของสังคมโบราณ</p>
+            </div>
+            <div class="w3-col m6 w3-padding-large w3-hide-small">
+                <img src="https://cdn.discordapp.com/attachments/1442170567271911556/1442174759109394654/3216f2db8b1caa2129ef6485d0bc8d91.jpg?ex=69247968&is=692327e8&hm=ee4e7798732cdbb55895547ae0ce2253cb737ea4de8ff89200b2019118f7e0a5" class="w3-round w3-image w3-opacity-min" alt="รูปภาพ" width="600" height="1500">
+            </div>
+        </div>
+
+        <div class="w3-row w3-padding-64" id="three">
+            <div class="w3-col m6 w3-padding-large w3-hide-small">
+                <img src="https://cdn.discordapp.com/attachments/1442170567271911556/1442186131667026021/K11704384-17.png?ex=69248400&is=69233280&hm=a931b1a66eabc41c89fcb73dd14d1628d18f3de6e5bf96b39d1599d01dfe0352" class="w3-round w3-image w3-opacity-min" alt="รูปภาพ" width="600" height="1500">
+            </div>
+            <div class="w3-col m6 w3-padding-large">
+                <p style="font-size:30px;" class="w3-center"><b>เนื้อเรื่องและการผจญภัยของกิลกาเมช</b></p>
+                <p class="w3-large">มหากาพย์กิลกาเมชไม่ใช่เพียงเรื่องราวของวีรบุรุษผู้มีพลังเหนือมนุษย์ แต่ยังสะท้อน <b>การผจญภัย การค้นหาตัวตน และความหมายของชีวิต</b> ผ่านเหตุการณ์และการต่อสู้ต่าง ๆ ของกิลกาเมชและเพื่อนร่วมทาง การผจญภัยเหล่านี้ประกอบด้วยการท้าทายสิ่งอันตราย การเผชิญกับความตาย และการเรียนรู้คุณค่าของมิตรภาพ</p>
+                <p style="font-size:22px;" class="w3-center"><b>เนื้อเรื่องสำคัญและการผจญภัย</b></p>
+                <p style="font-size:18px;" class="w3-center w3-text-grey"><b>การพบกับเอนกิดู</b></p>
+                <p class="w3-large w3-text-grey w3-hide-medium">กิลกาเมชเป็นกษัตริย์ที่มีอำนาจและพละกำลังมหาศาล แต่ประชาชนหวาดกลัวพฤติกรรมของเขา เทพเจ้าจึงสร้างเอนกิดู ชายป่าผู้มีพลังเทียบเท่ากิลกาเมช เมื่อทั้งสองพบกัน พวกเขาต่อสู้กันอย่างดุเดือด แต่สุดท้ายกลายเป็นเพื่อนรัก และร่วมกันผจญภัยไปพร้อมกัน</p>
+                <p style="font-size:18px;" class="w3-center w3-text-grey"><b>การต่อสู้กับฮุมบาบา</b></p>
+                <p class="w3-large w3-text-grey w3-hide-medium">ฮุมบาบา (Humbaba) เป็นผู้พิทักษ์ป่าไซเดอร์ กิลกาเมชและเอนกิดูต้องเผชิญกับสัตว์ประหลาดนี้ การต่อสู้ครั้งนี้ไม่เพียงแสดงถึงความกล้าหาญและพลังเหนือมนุษย์ของพวกเขา แต่ยังเป็นบทเรียนเกี่ยวกับ <b>ความกล้า ความยับยั้งชั่งใจ และการตัดสินใจที่ยากลำบาก</b></p>
+                <p style="font-size:18px;" class="w3-center w3-text-grey"><b>การปราบวัวสวรรค์</b></p>
+                <p class="w3-large w3-text-grey w3-hide-medium">หลังจากเทพีอิชตาร์เสนอความรักแก่กิลกาเมชแต่ถูกปฏิเสธ เธอจึงส่ง วัวสวรรค์ มาลงโทษเมืองอูรุค กิลกาเมชและเอนกิดูร่วมมือกันปราบวัวตัวนี้ การผจญภัยนี้สะท้อนถึง ความจงรักภักดีต่อเมืองและประชาชน รวมถึงมิตรภาพระหว่างกิลกาเมชกับเอนกิดู</p>
+                <p style="font-size:18px;" class="w3-center w3-text-grey"><b>การสูญเสียเอนกิดูและการค้นหาความเป็นอมตะ</b></p>
+                <p class="w3-large w3-text-grey w3-hide-medium">หลังจากเอนกิดูเสียชีวิต กิลกาเมชตกอยู่ในความเศร้าโศกและเริ่มตั้งคำถามเกี่ยวกับ ความตายและความเป็นอมตะ เขาออกเดินทางเพื่อค้นหาความลับของชีวิตนิรันดร์ การผจญภัยครั้งนี้นำเขาไปพบผู้รู้โบราณ และเรียนรู้ว่า มนุษย์ไม่สามารถมีชีวิตอมตะได้ แต่สามารถสร้างความยั่งยืนผ่านชื่อเสียงและการสร้างสิ่งยิ่งใหญ่ไว้บนโลก</p>
+            </div>
+        </div>
+
+        <div class="w3-container w3-padding-64" id="four">
+            <p style="font-size:30px;">คอนแท็ก</p>
+            <p>คำอธิบาย</p>
+            <p class="w3-text-blue-grey w3-large"><b>รายละเอียดสำคัญ</b></p>
+            <p>ชื่อ นาย ภูรินทร์ ศรีเอี่ยม ปวช 3 เทคโนโลยีสารสนเทศ</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>สร้างโดย <a href="https://www.facebook.com/phurin.sri.iam" target="_blank">นาย ภูรินทร์ ศรีเอี่ยม</a></p>
+    </footer>
+
+    <script>
+        const navbarHeight = document.querySelector('.w3-top').offsetHeight;
+        document.querySelectorAll('a[href^="#"]').forEach(link => {
+          link.addEventListener('click', e=>{
+            e.preventDefault();
+            const target = document.querySelector(link.getAttribute('href'));
+            if(target) window.scrollTo({top: target.offsetTop - navbarHeight, behavior:"smooth"});
+          });
+        });
+    </script>
+
+</body>
+
+</html>
